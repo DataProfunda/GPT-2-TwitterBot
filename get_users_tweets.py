@@ -1,7 +1,6 @@
 from auth_tw import get_key
 import tweepy
 import pandas as pd
-import re
 import os 
 
 
@@ -150,5 +149,5 @@ for user_tweets in file_list:
     user_file = pd.read_csv('TWEETS/' + user_tweets, sep=';').drop('Unnamed: 0',axis=1)
     tweets_df = pd.concat([tweets_df,user_file])
 
-tweets_df.reset_index(drop=True).to_csv('data_tweets_full2.csv', sep=';')
+tweets_df.reset_index(drop=True).to_csv('data_tweets_full.csv', sep=';')
 
