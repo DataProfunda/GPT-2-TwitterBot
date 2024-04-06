@@ -3,48 +3,50 @@
  ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
 
 <h2>Description</h2>
-Project consists of a simple PowerShell script that walks the user through "zeroing out" (wiping) any drives that are connected to the system. The utility allows you to select the target disk and choose the number of passes that are performed. The PowerShell script will configure a diskpart script file based on the user's selections and then launch Diskpart to perform the disk sanitization.
+My project facilitates the downloading of data from Twitter, enabling users to collect tweets from specific accounts. Subsequently, users can fine-tune a GPT-2 or other large language models using the collected data, allowing for personalized tweet generation. With my tool, users can effortlessly gather Twitter data, fine-tune models, and generate tweets tailored to their preferences.
 <br />
 
 
 <h2>Languages and Utilities Used</h2>
 
-- <b>PowerShell</b> 
-- <b>Diskpart</b>
+- <b>Python</b> 
+- <b>PyTorch</b>
+- <b>HuggingFace<b/>
 
 <h2>Environments Used </h2>
-
-- <b>Windows 10</b> (21H2)
 
 <h2>Program walk-through:</h2>
 
 <p align="center">
-Launch the utility: <br/>
-<img src="https://i.imgur.com/62TgaWL.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+1. Set your access api in auth_tw.py<br/>
+ 
+ ![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/bc42141c-bcf5-4a81-9486-f637c6d9a9fe)
+
 <br />
 <br />
-Select the disk:  <br/>
-<img src="https://i.imgur.com/tcTyMUE.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+<p align="center">
+2. Add accounts that you want to base your generation on in get_user_tweets.py. <br/>
+
+![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/4da31bab-9047-42a7-bc99-b4e20c023602)
 <br />
 <br />
-Enter the number of passes: <br/>
+3. Fine-Tune LLM Model( by default GPT-2 ) <br/>
 <img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 <br />
 <br />
-Confirm your selection:  <br/>
-<img src="https://i.imgur.com/cdFHBiU.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+4. Use fine-tuned model for tweets generation <br/>
+
+![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/ef5d472f-93f4-4012-bdc5-f91fe2683f41)
+
 <br />
 <br />
-Wait for process to complete (may take some time):  <br/>
-<img src="https://i.imgur.com/JL945Ga.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Sanitization complete:  <br/>
-<img src="https://i.imgur.com/K71yaM2.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
-<br />
-<br />
-Observe the wiped disk:  <br/>
-<img src="https://i.imgur.com/AeZkvFQ.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+5. Example tweet <br/>
+
+![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/1023c15b-ca53-45d7-9d9f-451d71d2ce4b)
+
+</br>
+</br>
 </p>
 
 <!--
