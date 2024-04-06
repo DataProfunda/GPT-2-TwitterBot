@@ -17,35 +17,43 @@ My project facilitates the downloading of data from Twitter, enabling users to c
 
 <h2>Program walk-through:</h2>
 
-<p align="center">
+<br />
 1. Set your access api in auth_tw.py<br/>
  
  ![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/bc42141c-bcf5-4a81-9486-f637c6d9a9fe)
 
 <br />
 <br />
+2. Download tweets.<br/>
 
-<p align="center">
-2. Add accounts that you want to base your generation on in get_user_tweets.py. <br/>
-
+Use in get_user_tweets.py for downloading tweets.
+Add accounts that you want to base your generation in this file.
 ![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/4da31bab-9047-42a7-bc99-b4e20c023602)
 <br />
 <br />
 3. Fine-Tune LLM Model( by default GPT-2 ) <br/>
+Use Fine_tuning_GPT2.ipynb notebook for fine-tuning.
+
 
 ![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/ef5d472f-93f4-4012-bdc5-f91fe2683f41)
+
 <br />
 <br />
-4. Use fine-tuned model for tweets generation <br/>
-Example of generated text
+4. <b> Use fine-tuned model for tweets generation </b> <br/>
+Use Content_Generator.ipynb notebook for tweets generation.
+Example of generated text.
+<br />
+
 ![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/09c7bf74-3741-4bc7-8224-a6df520cae75)
 
 
 <br />
 <br />
 5. Example tweet <br/>
+<br />
 
-![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/1023c15b-ca53-45d7-9d9f-451d71d2ce4b)
+![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/186013c7-5663-4b4f-8225-2f10528f1697)
+
 
 </br>
 </br>
