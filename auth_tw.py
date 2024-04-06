@@ -1,13 +1,22 @@
+# Twitter API authentication tokens
 access_token = ""
 access_token_secret = ""
-
 bearer_token = ""
 api_key = ""
 api_key_secret = ""
 
+# Function to retrieve Twitter API authentication tokens and keys
+def get_key(key_name: str):
+    """
+    Function to retrieve Twitter API authentication tokens and keys.
 
+    Args:
+    - key_name (str): The name of the key to retrieve.
 
-def get_key(key_name : str):
+    Returns:
+    - str: The value of the specified key.
+    """
+    # Retrieve the corresponding token or key based on the input key name
     if key_name == "access_token":
         return access_token
     elif key_name == "access_token_secret":
