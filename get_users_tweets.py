@@ -3,12 +3,9 @@ import tweepy
 import pandas as pd
 import os 
 
-
 '''
 This file contains code that downloads X(Twitter) posts from particular accounts.
 '''
-
-
 
 def api():
     '''api() - function
@@ -24,80 +21,15 @@ def api():
 #Authenticate Twitter API acces
 api = api()
 
-#List of twitter accounts used for downloading Tweets
-twitter_accounts = ['MasculineTheory', 
-                    'DevilsSeduction', 
-                    'ScandinavianBob',
-                    'drewrcarr', 
-                    'limitlessmindon',
-                    'MindTendencies2',
-                    'guideforlovers', 
-                    'FemalesMindset',
-                    'TheKingRacso',
-                    'MasculineRetain',
-                    'limitlessmindon',
-                    'MindfulDreamers',
-                    'imodernman',
-                    'StirlingWisdom',
-                    'Masc_Empire',
-                    'PowerOfValues',
-                    'Ant_Philosophy',
-                    'LatinaCasanova',
-                    'masculinesoul',
-                    'LifeMathMoney',
-                    'PUA_DATING_TIPS',
-                    'EgoDriv',
-                    'basedc1',
-                    'PathToManliness',
-                    'coltonswabb',
-                    'DentesLeo',
-                    'MasculineSage',
-                    'SpartanPsyche',
-                    'ManlyConfidence',
-                    'Masculineminds',
-                    'LatinaCasanova',
-                    'Stoic_Father',
-                    'VictimLiberator',
-                    'TheKingRacso',
-                    'MasculinePeak',
-                    'MindAmplifier_',
-                    'MenMoneyMindset',
-                    'CoachingWhisper',
-                    'dating_mentor',
-                    'polarityperfect',
-                    'TotallyReset',
-                    'Mindset_Machine',
-                    'Copywriting_Dad',
-                    'playboysecrets',
-                    'WrittenN0tes',
-                    'limooueslati',
-                    'MindUnleash_',
-                    'FishingQueenss',
-                    'michaeljringer',
-                    'fitat45plus',
-                    'ColliNof1',
-                    'reallytanman',
-                    'SirBarefoot',
-                    'spartans33d',
-                    'JohnConstas',
-                    'PurityChad',
-                    'Helios_Movement',
-                    'NoahRyanCo',
-                    'nootropicguy',
-                    'PrimalBrah',
-                    'HealthManly',
-                    'BowTied Biohacker',
-                    'BowTiedVitamins',
-                    'coookwithchris',
-                    'Earbuds_music',
-                    'MakeMenGr8Again']
-
-
+#List of twitter accounts used for downloading Tweets eg. 'elonmusk'
+twitter_accounts = ['elonmusk']
 
 data = []
 data_user = []
 
 df_engagment_info = pd.DataFrame(columns=['tweet','likes'])
+
+# Loop through each Twitter account to download tweets
 for user in twitter_accounts:
 
     
@@ -115,7 +47,7 @@ for user in twitter_accounts:
                                     screen_name = user, 
                                     count=200, tweet_mode='extended',  
                                     exclude_replies=True,
-                                include_rts=False).items(limit)
+                                    include_rts=False).items(limit)
     
     
     for tweet in tweets_extended:
