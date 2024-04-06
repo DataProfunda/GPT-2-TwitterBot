@@ -32,12 +32,14 @@ My project facilitates the downloading of data from Twitter, enabling users to c
 <br />
 <br />
 3. Fine-Tune LLM Model( by default GPT-2 ) <br/>
-<img src="https://i.imgur.com/nCIbXbg.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
+![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/ef5d472f-93f4-4012-bdc5-f91fe2683f41)
 <br />
 <br />
 4. Use fine-tuned model for tweets generation <br/>
+Example of generated text
+![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/09c7bf74-3741-4bc7-8224-a6df520cae75)
 
-![image](https://github.com/DataProfunda/GPT-2-TwitterBot/assets/69935274/ef5d472f-93f4-4012-bdc5-f91fe2683f41)
 
 <br />
 <br />
