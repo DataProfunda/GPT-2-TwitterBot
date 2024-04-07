@@ -1,7 +1,5 @@
 <h1>GPT-2 TwitterBot</h1>
 
- ### [YouTube Demonstration](https://youtu.be/7eJexJVCqJo)
-
 <h2>Description</h2>
 My project facilitates the downloading of data from Twitter, enabling users to collect tweets from specific accounts. Subsequently, users can fine-tune a GPT-2 or other large language models using the collected data, allowing for personalized tweet generation. With my tool, users can effortlessly gather Twitter data, fine-tune models, and generate tweets tailored to their preferences.
 <br />
